@@ -60,7 +60,7 @@ export default function CTA({setIsOpen}) {
               initial="hidden"
               whileInView="show"
             >
-              {splitWords("Ready to Save Your Tooth?")}
+              {splitWords("Let’s Work Together")}
          </motion.h2>
 
             {/* Word-by-word subheading */}

@@ -125,7 +125,7 @@ export default function Services() {
               whileInView="show"
               viewport={{ once: false, amount: 0.4 }}
               transition={{ delay: i * 0.3 }} // subtle stagger
-              key={i} className='border-t border-gray-400 pt-6 sm:pt-8 flex flex-col md:flex-row md:items-center  justify-between space-y-6 sm:space-y-8'>
+              key={i} className={`border-t border-gray-400 pt-6 sm:pt-8 flex flex-col md:flex-row md:items-center  ${i % 2 !== 0 ? "md:flex-row-reverse" : ""} justify-between space-y-6 sm:space-y-8`}>
               <div className='w-full md:w-1/4'>
                 <p className='flex items-center justify-center w-10 h-10 text-lg bg-[rgb(var(--brand-teal))] text-white rounded-full shadow-md mb-2.5'>
                   {service.id}
@@ -153,7 +153,7 @@ export default function Services() {
                   transition={{ duration: 1, ease: "easeOut" }}
                   viewport={{ once: false, amount: 0.3 }}
                   whileHover={{ scale: 1.05, rotate: 1 }}>
-                <img src={service.image} alt="service-1" className='w-full h-48 sm:h-[300px] md:h-[200px] rounded-2xl object-cover'/>
+                <img src={service.image} alt="service-1" className='w-full h-48 sm:h-75 md:h-50 rounded-2xl object-cover'/>
               </motion.div>
 
             </motion.div>

@@ -61,7 +61,7 @@ export default function Journey() {
           variants={{ show: { transition: { staggerChildren: 0.2, staggerDirection: scrollDir === "down" ? 1 : -1 } } }}
         >
           <motion.h2 className="text-xl sm:text-2xl md:text-3xl leading-tight text-[rgb(var(--brand-teal))]">
-            {splitWords("Work Experience")}
+            {splitWords("Professional Journey")}
           </motion.h2>
 
           <motion.h3 className="text-2xl sm:text-3xl md:text-4xl leading-tight font-semibold mt-2">
@@ -78,9 +78,9 @@ export default function Journey() {
             initial="hidden"                   // start state
             whileInView="show"                 // animate when in viewport
             viewport={{ once: false, amount: 0.5 }} // triggers animation when 30% visible
-            className="relative group">
+            className="relative group p-4 sm:p-6 rounded-3xl border bg-white/80 border-[rgb(var(--brand-teal))] shadow-lg hover:shadow-xl transition-all duration-300">
             <motion.div variants={dot} 
-              className="timeline-dot absolute -left-8 sm:-left-10 top-2.5 w-4 h-4 bg-[rgb(var(--brand-teal))]
+              className="timeline-dot absolute -left-8.75 sm:-left-11 top-6 size-5 sm:size-6 bg-[rgb(var(--brand-teal))]
                rounded-full border-2 border-black/20 transition-transform duration-500 ease-in-out 
                group-hover:scale-150">
             </motion.div>
@@ -96,14 +96,13 @@ export default function Journey() {
 
           {/* Item 2 */}
           <motion.div
-            className="relative group"
             variants={itemContainer}
             initial="hidden"
             whileInView="show"
             viewport={{ once: false, amount: 0.3 }}
-            >
+            className="relative group p-4 sm:p-6 rounded-3xl border bg-white/80 border-[rgb(var(--brand-teal))] shadow-lg hover:shadow-xl transition-all duration-300">
             <motion.div variants={dot} 
-              className="timeline-dot absolute -left-8 sm:-left-10 top-2.5 w-4 h-4 bg-[rgb(var(--brand-teal))]
+              className="timeline-dot absolute -left-8.75 sm:-left-11 top-6 size-5 sm:size-6 bg-[rgb(var(--brand-teal))]
                rounded-full border-2 border-black/20 transition-transform duration-500 ease-in-out 
                group-hover:scale-150">
             </motion.div>
@@ -118,16 +117,15 @@ export default function Journey() {
 
           {/* Item 3 */}
             <motion.div
-              className="relative group"
-              variants={itemContainer}
               initial="hidden"
               whileInView="show"
               viewport={{ once: false, amount: 0.3 }}
-              >
+              variants={itemContainer}
+              className="relative group p-4 sm:p-6 rounded-3xl border bg-white/80 border-[rgb(var(--brand-teal))] shadow-lg hover:shadow-xl transition-all duration-300">
               <motion.div variants={dot} 
-                className="timeline-dot absolute -left-8 sm:-left-10 top-2.5 w-4 h-4 bg-[rgb(var(--brand-teal))]
-                rounded-full border-2 border-black/20 transition-transform duration-500 ease-in-out 
-                group-hover:scale-150">
+                className="timeline-dot absolute -left-8.75 sm:-left-11 top-6 size-5 sm:size-6 bg-[rgb(var(--brand-teal))]
+                 rounded-full border-2 border-black/20 transition-transform duration-500 ease-in-out 
+                 group-hover:scale-150">
               </motion.div>
               <motion.h4 className="text-xl sm:text-2xl font-medium" variants={textItem}>
                 Early Dental Career — UAE & Abroad

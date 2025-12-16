@@ -123,14 +123,14 @@ export default function Hero({setIsOpen}) {
            <div className="relative flex items-center justify-center mb-6 gap-4 flex-wrap">
             <button onClick={() => setIsOpen(true)}
              className="group relative flex items-center border-2 border-white px-4 pr-14 py-2.5 bg-[rgb(var(--brand-white))] text-[rgb(var(--brand-black))] font-semibold rounded-full shadow-inner shadow-[rgb(var(--brand-white))/50] overflow-hidden transition-all duration-300 ease-in-out active:scale-95">
-             Book Appointment
+             Let’s Collaborate
               <div className="absolute right-1 top-1/2 transform -translate-y-1/2 flex items-center justify-center w-9 h-9 bg-[rgb(var(--brand-teal))] rounded-full shadow-md transition-all duration-300 ease-in-out group-hover:w-[calc(100%-0.5rem)]">
                 <HiArrowNarrowRight className="text-[rgb(var(--brand-white))] w-5 h-5 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
               </div>
             </button>
 
             <button className="text-center px-14 sm:px-10 py-2.5 border-2 border-[#1D796B] hover:bg-[#1D796B] hover:text-white bg-[rgb(var(--brand-white))] font-semibold rounded-full shadow-inner shadow-[rgb(var(--brand-white))/50] overflow-hidden transition-all duration-300 ease-in-out active:scale-95">
-             View Services
+            View Expertise
             </button>
            </div> 
          </motion.div>

@@ -123,7 +123,7 @@ export default function Contact() {
           </section>
 
         {/*  Map section  */}
-        <section className="relative w-full h-[260px] sm:h-[300px] md:h-[380px] lg:h-[450px] overflow-hidden  rounded-lg">
+        <section className="relative w-full h-65 sm:h-75 md:h-95 lg:h-112 overflow-hidden  rounded-lg">
             <iframe
                 title="Google Map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14441.078483886306!2d55.26772669167145!3d25.194128393402824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f682f700cf983%3A0xb5cc58b076c0b904!2sDowntown%20Dubai%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1763547297092!5m2!1sen!2sin"
