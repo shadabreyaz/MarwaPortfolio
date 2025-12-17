@@ -27,7 +27,7 @@ const ScrollTop = () => {
       onClick={scrollToTop}
       aria-label="Scroll to top"
       className={`fixed bottom-8 right-4 z-50 p-3 rounded-full
-       bg-[#1D796B] border border-white text-white shadow-lg
+       bg-[#21517D] border border-white text-white shadow-lg
         transition transform duration-300 ease-in-out cursor-pointer
         ${
           isVisible

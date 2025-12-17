@@ -81,7 +81,7 @@ export default function About() {
         
             <motion.div variants={item}>
               <button
-                className="group relative cursor-pointer flex items-center px-4 pr-14 py-2.5 bg-[rgba(19,21,23,0.1)] text-[rgb(var(--brand-black))] border border-[rgba(19,21,23,0.3)] font-semibold rounded-full shadow-inner shadow-[rgb(var(--brand-white))/50] overflow-hidden transition-all duration-300 ease-in-out active:scale-95">
+                className="group relative cursor-pointer flex items-center px-4 pr-14 py-2.5 bg-white text-[rgb(var(--brand-black))] border border-[rgba(19,21,23,0.35)] font-semibold rounded-full shadow-inner shadow-[rgb(var(--brand-white))/50] overflow-hidden transition-all duration-300 ease-in-out active:scale-95">
                   Learn More
                 <div className="absolute right-1 top-1/2 transform -translate-y-1/2 flex items-center justify-center w-9 h-9 bg-[rgb(var(--brand-teal))] rounded-full shadow-md transition-all duration-300 ease-in-out group-hover:w-[calc(100%-0.5rem)]">
                 <HiArrowNarrowRight className="text-[rgb(var(--brand-white))] w-5 h-5 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />

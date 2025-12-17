@@ -76,12 +76,10 @@ export default function Hero({setIsOpen}) {
       viewport={{ once: false, amount: 0.4 }}
       variants={heroContainer(scrollDir)}
        className="w-full bg-[#f8fafc] relative pt-38 pb-1 flex flex-col items-center justify-end">
-      <div className="absolute inset-0 z-0"
+       <div className="absolute inset-0 z-0"
         style={{ backgroundImage: `
-            linear-gradient(20deg, rgba(248,250,252,1) 0%,  rgba(219,234,254,0.7) 30%,  rgba(165,180,252,0.5) 60%, rgba(129,140,248,0.6) 100% ),
-            radial-gradient(circle at 20% 30%, rgba(255,255,255,0.6) 0%, transparent 40%),
-            radial-gradient(circle at 80% 70%, rgba(199,210,254,0.4) 0%, transparent 50%),
-            radial-gradient(circle at 40% 80%, rgba(224,231,255,0.3) 0%, transparent 60%)`}}>
+        radial-gradient(circle 800px at 0% 200px, #bfdbfe, transparent),
+        radial-gradient(circle 800px at 100% 200px, #bfdbfe, transparent)`}}>
        </div>
        <div className="relative custom-container text-center flex flex-col items-center mb-3 sm:mb-6 lg:mb-30">
          <motion.span variants={heroItem} 
@@ -92,7 +90,7 @@ export default function Hero({setIsOpen}) {
          <motion.h1 variants={{ show: { transition: { staggerChildren: 0.4, staggerDirection: scrollDir === "down" ? 1 : -1 } } }}
            initial="hidden"
            whileInView="show"
-           className="text-3xl sm:text-5xl md:text-6xl leading-tight">
+           className="text-3xl sm:text-5xl md:text-6xl leading-tight text-black/80">
               {splitWords("I'm")} <span className="text-[rgb(var(--brand-teal))]">{splitWords("Marwa Al Mansoori")} </span>
               <br />
               {splitWords("Strategic Consultant")}
@@ -118,18 +116,18 @@ export default function Hero({setIsOpen}) {
            transition={{ duration: 0.3, ease: "easeOut" }} className='bg-[rgb(var(--brand-teal))] rounded-ss-full rounded-se-full h-68 w-full sm:w-2/3 lg:w-[36%] relative 
            flex items-end justify-center self-center lg:self-end-safe order-1 lg:order-[unset] mt-22 lg:mt-0'>
 
-           <img src="/her5.png" alt="Hero-img" className='absolute bottom-0 inset-x-0 h-[20rem] sm:h-[24rem] w-auto object-contain'/>
+           <img src="/hero.png" alt="Hero-img" className='absolute bottom-0 inset-x-0 h-[20rem] sm:h-[24rem] w-auto object-cover'/>
 
            <div className="relative flex items-center justify-center mb-6 gap-4 flex-wrap">
             <button onClick={() => setIsOpen(true)}
-             className="group relative flex items-center border-2 border-white px-4 pr-14 py-2.5 bg-[rgb(var(--brand-white))] text-[rgb(var(--brand-black))] font-semibold rounded-full shadow-inner shadow-[rgb(var(--brand-white))/50] overflow-hidden transition-all duration-300 ease-in-out active:scale-95">
+             className="cursor-pointer group relative flex items-center border-2 border-white px-4 pr-14 py-2.5 bg-[rgb(var(--brand-white))] text-[rgb(var(--brand-black))] font-semibold rounded-full shadow-inner shadow-[rgb(var(--brand-white))/50] overflow-hidden transition-all duration-300 ease-in-out active:scale-95">
                Request Consultation
               <div className="absolute right-1 top-1/2 transform -translate-y-1/2 flex items-center justify-center w-9 h-9 bg-[rgb(var(--brand-teal))] rounded-full shadow-md transition-all duration-300 ease-in-out group-hover:w-[calc(100%-0.5rem)]">
                 <HiArrowNarrowRight className="text-[rgb(var(--brand-white))] w-5 h-5 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
               </div>
             </button>
 
-            <button className="text-center px-14 sm:px-10 py-2.5 border-2 border-[#1D796B] hover:bg-[#1D796B] hover:text-white bg-[rgb(var(--brand-white))] font-semibold rounded-full shadow-inner shadow-[rgb(var(--brand-white))/50] overflow-hidden transition-all duration-300 ease-in-out active:scale-95">
+            <button className="cursor-pointer text-center px-14 sm:px-10 py-2.5 border-2 border-white hover:bg-[#14598F] hover:text-white bg-[rgb(var(--brand-white))] font-semibold rounded-full shadow-inner shadow-[rgb(var(--brand-white))/50] overflow-hidden transition-all duration-300 ease-in-out active:scale-95">
               View Expertise
             </button>
            </div> 

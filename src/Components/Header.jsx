@@ -48,7 +48,7 @@ export default function Header() {
         variants={headerVariants}
       className={`fixed left-1/2 -translate-x-1/2 z-50 py-2 transition-all duration-500 ease-in-out
         ${isScrolled
-          ? "top-3 backdrop-blur-lg bg-[rgb(var(--brand-teal))]/30 shadow-md rounded-[40px] w-[92%] md:w-[94%]"
+          ? "top-3 backdrop-blur-lg bg-[rgb(var(--brand-teal))]/20 shadow-md rounded-[40px] w-[92%] md:w-[94%]"
           : "bg-transparent w-full"
         }`}
     >
@@ -59,7 +59,7 @@ export default function Header() {
             variants={itemVariants}
             className="font-bold" >
           <img
-            src="/logo3.png"
+            src="/logo1.png"
             alt="logo"
             className={`${isScrolled? 'h-15 sm:h-18' : 'h-16 sm:h-22'} w-auto object-contain`}
           />

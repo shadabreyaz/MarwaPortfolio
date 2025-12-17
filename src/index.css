@@ -2,7 +2,7 @@
 
 @layer base {
     :root {
-      --brand-teal: 56, 128, 108;   /*065F46*/
+      --brand-teal: 39,94,144;   /*#275E90*/
       --brand-black: 13 13 13;   /* #0D0D0D */
       --brand-white: 255 255 255; /* #FFFFFF */
       --brand-gray: 117, 117, 117; /* #757575 */
@@ -43,15 +43,13 @@
     }
   } 
   
-  /* text-[#4CAFF0]  text-[#A084FF] */
-  
   /* --------- Timeline Dot Animation --------- */
   .timeline-dot::after {
     content: "";
     position: absolute;
     inset: 0;
     border-radius: 9999px;
-    background: rgba(20, 184, 166, 0.5); /* faded teal */
+    background: rgba(39, 94, 144, 0.5); /* faded teal */
     animation: ripple 1.8s ease-out infinite;
   }
   

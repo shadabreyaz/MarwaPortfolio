@@ -40,13 +40,17 @@ export default function CTA({setIsOpen}) {
   return (
     <section className="py-12 sm:py-20 relative overflow-hidden bg-gray-100">
       
-      <div className="absolute inset-0 z-0"
+      {/* <div className="absolute inset-0 z-0"
         style={{ backgroundImage: `
             linear-gradient(200deg, rgba(248,250,252,1) 0%,  rgba(219,234,254,0.7) 30%,  rgba(165,180,252,0.5) 60%, rgba(129,140,248,0.6) 100% ),
             radial-gradient(circle at 20% 30%, rgba(255,255,255,0.6) 0%, transparent 40%),
             radial-gradient(circle at 80% 70%, rgba(199,210,254,0.4) 0%, transparent 50%),
             radial-gradient(circle at 40% 80%, rgba(224,231,255,0.3) 0%, transparent 60%)`}}>
-       </div>
+       </div> */}
+       <div className="absolute inset-0 z-0"
+        style={{ backgroundImage: `
+          radial-gradient(circle at left, #93c5fd, transparent)`}}>
+       </div>
 
       <motion.div className="custom-container text-center max-w-4xl mx-auto px-4 relative"
           variants={container(scrollDir)}
@@ -65,7 +69,7 @@ export default function CTA({setIsOpen}) {
 
             {/* Word-by-word subheading */}
          <motion.h3 
-              className="text-2xl sm:text-3xl md:text-4xl leading-tight font-semibold mt-2 mb-6"
+              className="text-2xl sm:text-3xl md:text-4xl leading-tight font-semibold mt-2 mb-6 text-black/85"
               variants={{ show: { transition: { staggerChildren: 0.25, staggerDirection: scrollDir === "down" ? 1 : -1 } } }}
               initial="hidden"
               whileInView="show"

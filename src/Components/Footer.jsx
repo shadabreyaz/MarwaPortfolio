@@ -25,7 +25,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-[#2F6E5E] pt-12 sm:pt-18">
+    <footer className="bg-[#21517D] pt-12 sm:pt-18">
         <motion.h2
             className="text-3xl sm:text-4xl md:text-5xl leading-tight font-semibold
             text-[rgb(var(--brand-white))] text-center mb-12"
@@ -63,11 +63,11 @@ export default function Footer() {
                 />
 
                 <button
-                    className="px-6 py-2 sm:py-2.5 bg-[rgb(var(--brand-teal))] hover:bg-[rgb(var(--brand-teal))]/85 text-white font-semibold rounded-full transition cursor-pointer"
+                    className="px-6 py-2 sm:py-2.5 bg-linear-to-r from-[#0F203C] to-[#14598F] text-white font-semibold rounded-full hover:from-[#14598F] hover:to-[#0F203C]
+                    transition-all duration-300 cursor-pointer"
                 >
                     Subscribe
                 </button>
-
               </motion.div>
             </motion.div>
 

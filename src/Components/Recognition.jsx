@@ -69,7 +69,7 @@ const items = [
               <div
                 key={i}
                 className="flex items-center gap-4 px-6 sm:px-8 py-4 sm:py-5 rounded-full
-                bg-white shadow-lg"
+                bg-white shadow-lg text-[#275E90]"
               >
                 <span className="text-[rgb(var(--brand-accent))] text-xl">
                   {item.icon}
