@@ -36,7 +36,7 @@ export default function Footer() {
             show: { transition: { staggerChildren: 0.3 } },
             }}
         >
-            {splitWords("Dr. Olga Vasylenko")}
+            {splitWords("Marwa Al Mansoori")}
         </motion.h2>
 
         <div className="custom-container grid grid-cols-1 md:grid-cols-2 xl:grid-cols-[1.5fr_1fr_1fr_1fr] gap-8 sm:gap-12">
@@ -52,7 +52,7 @@ export default function Footer() {
               </motion.h3>  
               <div className="h-1 w-16 bg-white mb-4 bg-linear-to-r from-[rgb(var(--brand-teal))] to-white rounded-full"></div>
               <motion.p className="text-gray-100 mb-6 text-sm sm:text-base" variants={lineItem}>
-                Subscribe to receive updates, insights, and announcements.
+                 Subscribe to receive insights, updates, and thought leadership on economic development, public-private partnerships, and strategic business growth.
               </motion.p>
                 
               <motion.div className="flex flex-col sm:flex-row gap-3" variants={lineItem}>
@@ -79,7 +79,7 @@ export default function Footer() {
                 <div className="h-1 w-16 bg-white mb-4 bg-linear-to-r from-[rgb(var(--brand-teal))] to-white rounded-full"></div>
                 
                 <motion.ul className="space-y-2 text-gray-100 font-medium flex md:flex-col flex-wrap">
-                    {["About", "Services", "Experience", "Contact"].map((link, i) => (
+                    {["About", "Expertise", "Leadership & Recognition", "Contact"].map((link, i) => (
                     <motion.li key={i} variants={lineItem}>
                         <a
                         href={`#${link.toLowerCase()}`}
@@ -98,7 +98,7 @@ export default function Footer() {
                 </motion.h3>
                 <div className="h-1 w-16 bg-white mb-4 bg-linear-to-r from-[rgb(var(--brand-teal))] to-white rounded-full"></div>
                  <motion.ul className="space-y-2 text-gray-100 font-medium">
-                    {["Microscopic Endodontics", "Retreatment of Complex Cases", "Root Canal Treatment", "Natural Tooth Restoration"].map((item, i) => (
+                    {["Strategic Business Development", "Public-Private Partnerships", "Digital Transformation", "Women Entrepreneurship"].map((item, i) => (
                     <motion.li
                         key={i}
                         variants={lineItem}
@@ -119,7 +119,7 @@ export default function Footer() {
                 <motion.div className="font-medium mb-5 flex md:flex-col flex-wrap gap-3" variants={{ hidden: {}, show: { transition: { staggerChildren: 0.1 } } }}>
                     <motion.p className="text-gray-100 flex items-center gap-2 m-0" variants={lineItem}>
                     <FaLocationDot className="h-5 w-5" />
-                    <span>GMC Clinics, Green Community, Jumeirah </span>
+                    <span>Abu Dhabi & Dubai, United Arab Emirates </span>
                     </motion.p>
                     <motion.p className="text-gray-100 flex items-center gap-2 m-0" variants={lineItem}>
                     <FaPhoneAlt className="h-5 w-5" />
@@ -127,19 +127,20 @@ export default function Footer() {
                     </motion.p>
                     <motion.p className="text-gray-100 flex items-center gap-2 m-0" variants={lineItem}>
                     <IoMail className="h-5 w-5" />
-                    <span>contact@drolga.com</span>
+                    <span>contact@prosperpartners.ae</span>
                     </motion.p>
                 </motion.div>
 
                 <motion.div className="flex items-center gap-4" variants={{ hidden: {}, show: { transition: { staggerChildren: 0.1 } } }}>
-                    {[FaInstagram, FaLinkedin, FaTwitter, FaFacebook].map((Icon, i) => (
+                    {[{ icon: <FaInstagram />, href: "#"}, { icon: <FaLinkedin />, href: "https://www.linkedin.com/in/marwa-al-mansoori-5789177b/"}, { icon: <FaTwitter />,
+                     href: "#"}, { icon: <FaFacebook />, href: "#"},].map((Icon, i) => (
                     <motion.a
                         key={i}
-                        href="#"
+                        href={Icon.href}
                         className="text-white hover:scale-125 transition-all duration-300"
                         variants={lineItem}
                     >
-                        <Icon className="h-6 w-6" />
+                       {React.cloneElement(Icon.icon, { className: "h-6 w-6" })}
                     </motion.a>
                     ))}
                 </motion.div>
@@ -147,26 +148,8 @@ export default function Footer() {
 
         </div>
 
-        <motion.div
-              variants={{ hidden: {}, show: { transition: { staggerChildren: 0.1 } } }}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: false, amount: 0.3 }}
-            className="custom-container mt-9 flex flex-col items-center justify-center">
-          <motion.div variants={lineItem}>
-            <img
-              src="/footerlogo.jpg"
-              alt="StyleItaliano Member"
-              className="h-16 opacity-90 hover:opacity-100 transition rounded-lg"
-            />
-          </motion.div>
-          <motion.p variants={lineItem} className="text-center text-gray-100 text-sm mt-2 opacity-80">
-            Member of the StyleItaliano Global Restorative Dentistry Community
-          </motion.p>
-        </motion.div>
-
         <div className="custom-container border-t border-gray-400 mt-6 sm:mt-10 py-6 text-center text-gray-200 text-sm">
-        © {new Date().getFullYear()} Dr.Olga. All Rights Reserved. Developed by Qutbee
+        © {new Date().getFullYear()} Marwa Al Mansoori. All Rights Reserved. | Developed by Qutbee
         </div>
 
     </footer>

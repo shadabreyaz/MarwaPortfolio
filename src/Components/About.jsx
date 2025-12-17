@@ -61,27 +61,27 @@ export default function About() {
               initial="hidden"
               whileInView="show"
             >
-              {splitWords("Precision. Passion. Preservation.")}
+              {splitWords("Vision. Leadership. Impact.")}
             </motion.h3>
 
             <motion.h4 variants={item} 
               className="text-lg sm:text-2xl md:text-3xl font-medium leading-tight whitespace-break-spaces mb-4">
-              Expert in Tooth Preservation & Microscopic Endodontics
+              Strategic Consultant & Economic Advisor
             </motion.h4>
 
             <motion.p 
              variants={item} className="text-[rgb(var(--brand-black))] text-base sm:text-lg mb-4">
-              I’m Dr. Olga Vasylenko, a Specialist Endodontist dedicated to saving teeth with precision and care. While many rush to extract, I focus on restoring. Using my <span className='underline'>“Microscopic Philosophy”</span> and a dental operating microscope, I can see what’s invisible to the naked eye, ensuring higher success rates for root canals and complex treatments.
+              I’m Marwa Al Mansoori, an Emirati leader driving economic growth through strategic collaboration and policy-aligned innovation. While many focus on short-term outcomes, I work at the intersection of government vision and private sector execution helping businesses, institutions, and entrepreneurs scale with purpose and resilience.
             </motion.p>
             <motion.p 
              variants={item} className="text-[rgb(var(--brand-black))] text-base sm:text-lg mb-6">
-             I hold a Master’s in Endodontics from Kharkiv National Medical University and a Diploma in Aesthetic Dentistry from the University of Nancy, France. I am a resident of the Royal College of Edinburgh, UK, and a member of <span className='underline'>"StyleItaliano"</span>. I practice in Dubai (GMC Clinics) and Abu Dhabi, combining precision with an artistic touch to ensure every restored tooth looks natural and beautiful."
+             I am a graduate of the University of Edinburgh and one of the youngest Board Members of the Abu Dhabi Chamber of Commerce & Industry and the Abu Dhabi Businesswomen Council. Recognized by Forbes Middle East (30 Under 30 Game Changer), I lead "Prosper Partners Consultancy" and founded <span className='font-semibold'>MALENA</span>, combining strategy, entrepreneurship, and impact to shape future-ready economies.
             </motion.p>
         
             <motion.div variants={item}>
               <button
                 className="group relative cursor-pointer flex items-center px-4 pr-14 py-2.5 bg-[rgba(19,21,23,0.1)] text-[rgb(var(--brand-black))] border border-[rgba(19,21,23,0.3)] font-semibold rounded-full shadow-inner shadow-[rgb(var(--brand-white))/50] overflow-hidden transition-all duration-300 ease-in-out active:scale-95">
-                  Learn More About Me
+                  Learn More
                 <div className="absolute right-1 top-1/2 transform -translate-y-1/2 flex items-center justify-center w-9 h-9 bg-[rgb(var(--brand-teal))] rounded-full shadow-md transition-all duration-300 ease-in-out group-hover:w-[calc(100%-0.5rem)]">
                 <HiArrowNarrowRight className="text-[rgb(var(--brand-white))] w-5 h-5 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
                 </div>

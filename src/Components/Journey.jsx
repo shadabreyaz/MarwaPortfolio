@@ -65,7 +65,7 @@ export default function Journey() {
           </motion.h2>
 
           <motion.h3 className="text-2xl sm:text-3xl md:text-4xl leading-tight font-semibold mt-2">
-            {splitWords("A Journey of Growth, Expertise & Care")}
+            {splitWords("A Journey of Leadership, Strategy & Impact")}
           </motion.h3>
         </motion.div>
 
@@ -86,11 +86,11 @@ export default function Journey() {
             </motion.div>
 
             <motion.h4 className="text-xl sm:text-2xl font-medium" variants={textItem}>
-              Senior Specialist Endodontist — Dubai & Abu Dhabi
+              Board Member (Sheikh Khalifa Excellence Award)
             </motion.h4>
-            <motion.p className="text-sm text-gray-600 mb-2" variants={textItem}>2015 — Present</motion.p>
+            <motion.p className="text-sm text-gray-600 mb-2" variants={textItem}>2024 — Present</motion.p>
             <motion.p className="text-base sm:text-lg text-gray-700" variants={textItem}>
-              I lead complex cases in Microscopic Endodontics, treating challenging root canals with precision and care. Every tooth I restore benefits from advanced technology, pain-free techniques, and aesthetic excellence.
+              Provides strategic leadership as a Board Member, contributing to excellence, innovation, and institutional impact at the Sheikh Khalifa Excellence Award.
             </motion.p>
           </motion.div>
 
@@ -107,11 +107,11 @@ export default function Journey() {
                group-hover:scale-150">
             </motion.div>
             <motion.h4 className="text-xl sm:text-2xl font-medium" variants={textItem}>
-              Consultant Dentist — Private Practice
+             Vice President of Government Affairs (Siemens)
             </motion.h4>
-            <motion.p className="text-sm text-gray-600 mb-2" variants={textItem}>2010 — 2015</motion.p>
+            <motion.p className="text-sm text-gray-600 mb-2" variants={textItem}>2022 — 2024</motion.p>
             <motion.p className="text-base sm:text-lg text-gray-700" variants={textItem}>
-              I focused on delivering high-quality dental care with a patient-first approach, combining clinical expertise with the latest restorative techniques.
+              Leads government relations and public policy engagement, strengthening strategic partnerships and aligning business objectives with national priorities.   
             </motion.p>
           </motion.div>
 
@@ -128,11 +128,32 @@ export default function Journey() {
                  group-hover:scale-150">
               </motion.div>
               <motion.h4 className="text-xl sm:text-2xl font-medium" variants={textItem}>
-                Early Dental Career — UAE & Abroad
+               The University of Edinburgh (Bachelor of Arts)
               </motion.h4>
-              <motion.p className="text-sm text-gray-600 mb-2" variants={textItem}>2003 — 2010</motion.p>
+              <motion.p className="text-sm text-gray-600 mb-2" variants={textItem}>2009 — 2013</motion.p>
               <motion.p className="text-base sm:text-lg text-gray-700" variants={textItem}>
-                I built a strong foundation in endodontics and aesthetic dentistry, gaining hands-on experience in complex procedures and learning to treat every tooth with precision and care.
+                 Built a broad academic foundation emphasizing critical thinking, communication, and global awareness. 
+              </motion.p>
+            </motion.div>
+
+          {/* Item 4 */}
+            <motion.div
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: false, amount: 0.3 }}
+              variants={itemContainer}
+              className="relative group p-4 sm:p-6 rounded-3xl border bg-white/80 border-[rgb(var(--brand-teal))] shadow-lg hover:shadow-xl transition-all duration-300">
+              <motion.div variants={dot} 
+                className="timeline-dot absolute -left-8.75 sm:-left-11 top-6 size-5 sm:size-6 bg-[rgb(var(--brand-teal))]
+                 rounded-full border-2 border-black/20 transition-transform duration-500 ease-in-out 
+                 group-hover:scale-150">
+              </motion.div>
+              <motion.h4 className="text-xl sm:text-2xl font-medium" variants={textItem}>
+                The American International School of Abu Dhabi
+              </motion.h4>
+              <motion.p className="text-sm text-gray-600 mb-2" variants={textItem}>1998 — 2009</motion.p>
+              <motion.p className="text-base sm:text-lg text-gray-700" variants={textItem}>
+               Completed a comprehensive international education, developing strong academic fundamentals, cultural awareness, and communication skills that support leadership and global engagement 
               </motion.p>
             </motion.div>
 

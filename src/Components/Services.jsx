@@ -7,34 +7,34 @@ export default function Services() {
   const services = [
     {
       id: "01",
-      title: "Microscopic Root Canal Treatment",
+      title: "Strategic Business Development",
       description:
-        "Precise, pain-free root canal treatments performed under 25x magnification to remove infection, relieve pain instantly, and protect your natural tooth.",
-      tags: ["Pain-Free Therapy", "Single-Visit Root Canal Procedures", "Treatment of Complex Canals"],
+        "Supporting international companies and startups in navigating the UAE market, aligning with government vision, and building scalable growth strategies.",
+      tags: ["Market Entry & Expansion", "G2B & B2B Alignment", "Growth Strategy Frameworks"],
       image: "/service1.jpg",
     },
     {
       id: "02",
-      title: "Retreatment & Impossible Cases",
+      title: "Public–Private Partnerships & Government Relations",
       description:
-        "Advanced retreatment solutions for cases that failed previously or were labeled “impossible,” restoring teeth once considered unsalvageable.",
-      tags: ["Correction of Failed Root Canals", "Perforation Repair", "Broken Instrument Removal"],
+        "Bridging legislative frameworks with private sector execution to enable collaboration, compliance, and long-term value creation.",
+      tags: ["Policy Alignment", "Economic Framework Design", "Stakeholder Engagement"],
       image: "/service3.jpg",
     },
     {
       id: "03",
-      title: "Aesthetic Endodontic Rehabilitation",
+      title: "Digital Transformation & Innovation",
       description:
-        "Restoring tooth strength and beauty after endodontic treatment using biomimetic techniques that preserve more natural structure.",
-      tags: ["Post-Endodontic Restorations", "Biomimetic Dentistry", "Ceramic Overlays"],
+        "Championing digital evolution through AI, Web3, and sustainability-driven business models across public and private sectors.",
+      tags: ["Digital Strategy", "Innovation Frameworks", "Sustainable Development Goals (SDGs)"],
       image: "/service4.jpg",
     },
     {
       id: "04",
-      title: "Orthodontic Treatments",
+      title: "Women Entrepreneurship & Mentorship",
       description:
-        "Correcting alignment and bite issues using traditional braces and advanced clear aligner solutions.",
-      tags: ["Braces", "Aligners", "Bite Correction"],
+        "Empowering women-owned businesses through mentorship, strategic guidance, and ecosystem building.",
+      tags: ["Founder Mentorship", "Capacity Building", "Entrepreneurial Networks"],
       image: "/service2.jpg",
     },
   ];
@@ -87,7 +87,7 @@ export default function Services() {
               initial="hidden"
               whileInView="show"
               className="text-xl sm:text-2xl md:text-3xl leading-tight text-[rgb(var(--brand-teal))] mb-2">
-              {splitWords("Services")}
+              {splitWords("Expertise")}
             </motion.h2>
 
             <div className="flex items-center justify-between flex-wrap space-y-6 sm:space-y-8 mb-6 sm:mb-12">
@@ -97,7 +97,7 @@ export default function Services() {
                 initial="hidden"
                 whileInView="show"
               >
-                {splitWords("Creating Beautiful Smiles, One Patient at a Time with Personalized, Expert Dental Care")}
+                {splitWords("Building Sustainable Growth Through Strategy & Innovation")}
               </motion.h3>
 
               <motion.div
@@ -107,7 +107,7 @@ export default function Services() {
                 viewport={{ once: false, amount: 0.3 }}>
                 <button
                   className="group relative cursor-pointer flex items-center px-4 pr-14 py-2.5 bg-[rgb(var(--brand-teal))] text-[rgb(var(--brand-white))] font-semibold rounded-full shadow-inner shadow-[rgb(var(--brand-teal))/50] overflow-hidden transition-all duration-300 ease-in-out active:scale-95">
-                  Explore Services
+                  Explore Expertise
                   <div className="absolute right-1 top-1/2 transform -translate-y-1/2 flex items-center justify-center w-9 h-9 bg-[rgb(var(--brand-white))] rounded-full shadow-md transition-all duration-300 ease-in-out group-hover:w-[calc(100%-0.5rem)]">
                     <HiArrowNarrowRight className="text-[rgb(var(--brand-teal))] w-5 h-5 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
                   </div>

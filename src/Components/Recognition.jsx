@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaAward, FaBuilding, FaUsers, FaGlobe } from "react-icons/fa";
+import { FaMicrophone } from "react-icons/fa6";
 import useScrollDirection from "../hook/useScrollDirection";
 
 
@@ -32,8 +33,8 @@ const items = [
   { icon: <FaAward />, text: "Economic Development" },
   { icon: <FaBuilding />, text: "Private Sector Advocacy" },
   { icon: <FaUsers />, text: "Women Entrepreneurship" },
-  { icon: <FaGlobe />, text: "Public–Private Partnerships" },
-  { icon: <FaGlobe />, text: "Global Trade & Investment" },
+  { icon: <FaGlobe />, text: "Public Private Partnerships" },
+  { icon: <FaMicrophone />, text: "Global Trade & Investment" },
 ];
 
   return (
@@ -89,10 +90,10 @@ const items = [
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9 }}
             viewport={{ once: false, amount: 0.3 }}
-            className="lg:col-span-2 p-10 rounded-4xl bg-white shadow-2xl relative"
+            className="lg:col-span-2 p-8 rounded-4xl bg-white/80 shadow-lg hover:shadow-xl relative"
           >
             <span className="inline-flex items-center gap-2 text-sm uppercase tracking-widest font-semibold text-[rgb(var(--brand-accent))]">
-              <FaAward /> Forbes Recognition
+             <FaAward className="text-[rgb(var(--brand-teal))] w-7 h-7" /> Forbes Recognition
             </span>
 
             <h4 className="text-3xl sm:text-4xl font-semibold mt-4 mb-4 leading-tight">
@@ -100,10 +101,10 @@ const items = [
               Middle East
             </h4>
 
-            <p className="text-base sm:text-lg text-gray-700 max-w-2xl">
+            <p className="text-base sm:text-lg text-gray-700 max-w-3xl">
               Recognized for advancing social and economic entrepreneurship,
               driving innovation across public-private partnerships,
-              and contributing to regional digital transformation.
+              and contributing to innovation and digital transformation across the region.
             </p>
 
             {/* Accent Block */}
@@ -112,22 +113,24 @@ const items = [
 
           {/* Supporting Items */}
           {[{
-            icon: <FaBuilding />,
+            icon: <FaBuilding className="text-[rgb(var(--brand-teal))] size-7" />,
             title: "Youngest Board Member",
             subtitle: "Abu Dhabi Chambers of Commerce & Industry",
             text: "Appointed by His Highness Sheikh Mohammed bin Zayed Al Nahyan, contributing to policies that strengthen the Abu Dhabi economy and advocate for private sector growth.",
           }, {
-            icon: <FaUsers />,
+            icon: <FaUsers className="text-[rgb(var(--brand-teal))] size-7" />,
             title: "Board Member",
-            text: "Abu Dhabi Businesswomen Council",
+            subtitle: "Abu Dhabi Businesswomen Council",
+            text:"Advocating for women’s participation in economic development through mentorship and global trade engagement."
           }, {
             icon: <FaGlobe />,
-            title: "International Speaker",
-            text: "Digital transformation & sustainability frameworks",
+            title: "Economic Cooperation Committee Member",
+            text: "Selected as one of 22 members to contribute to setting strategic economic objectives for Abu Dhabi, supporting long-term growth and regional competitiveness.",
           }, {
-            icon: <FaGlobe />,
+            icon: <FaMicrophone className="text-[rgb(var(--brand-teal))] size-7" />,
             title: "International Speaker",
-            text: "Digital transformation & sustainability frameworks",
+            subtitle: "Digital transformation & sustainability frameworks",
+            text:"Speaking on digital transformation, sustainability frameworks and entrepreneurship at global forums and conferences."
           }].map((item, i) => (
             <motion.div
               key={i}
@@ -135,7 +138,7 @@ const items = [
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: i * 0.15 }}
               viewport={{ once: false, amount: 0.3 }}
-              className="p-8 rounded-3xl bg-white/80 backdrop-blur shadow-lg hover:shadow-xl transition-shadow"
+              className="p-6 rounded-3xl bg-white/80 backdrop-blur shadow-lg hover:shadow-2xl transition-shadow"
             >
               <div className="text-[rgb(var(--brand-teal))] text-3xl mb-4">
                 {item.icon}

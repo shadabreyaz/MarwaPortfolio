@@ -70,11 +70,11 @@ export default function CTA({setIsOpen}) {
               initial="hidden"
               whileInView="show"
             >
-              {splitWords("Get Expert, Precise, and Pain Free Endodontic Care")}
+              {splitWords("Strategic Leadership That Shapes the Future.")}
           </motion.h3>    
 
         <motion.p variants={item} className="text-base sm:text-lg text-gray-700 mb-8">
-         If you're experiencing dental pain, need a root canal, or want a second opinion before an extraction, I’m here to help. With advanced microscopic techniques and a focus on preserving your natural teeth, you can move forward with confidence and clarity.
+          Whether you need strategic consultancy, policy alignment, or guidance in the UAE, Marwa Al Mansoori helps organizations turn vision into action with clarity and confidence. 
         </motion.p>
 
         {/* CTA Button */}
@@ -85,7 +85,7 @@ export default function CTA({setIsOpen}) {
           viewport={{ once: false, amount: 0.3 }}>
           <button onClick={() => setIsOpen(true)}
             className="group relative mx-auto border border-white cursor-pointer flex items-center px-6 pr-14 py-3 bg-[rgb(var(--brand-white))] text-[rgb(var(--brand-black))] font-semibold rounded-full shadow-inner shadow-[rgb(var(--brand-white))/50] overflow-hidden transition-all duration-300 ease-in-out active:scale-95">
-            Book an Appointment
+             Lets Work Together
             <div className="absolute right-1 top-1/2 transform -translate-y-1/2 flex items-center justify-center w-9 h-9 bg-[rgb(var(--brand-teal))] rounded-full shadow-md transition-all duration-300 ease-in-out group-hover:w-[calc(100%-0.5rem)]">
               <HiArrowNarrowRight className="text-[rgb(var(--brand-white))] w-5 h-5 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
             </div>

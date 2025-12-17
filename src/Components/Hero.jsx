@@ -1,8 +1,8 @@
 import React from 'react'
 import { motion } from "framer-motion";
 import { HiArrowNarrowRight } from "react-icons/hi";
-import { FaTrophy, FaClock } from "react-icons/fa"
-import { FaTooth } from "react-icons/fa6";
+import { FaAward, FaClock } from "react-icons/fa"
+import { FaHandshake } from "react-icons/fa";
 import Counter from './Counter';
 import useScrollDirection from '../hook/useScrollDirection';
 
@@ -93,20 +93,20 @@ export default function Hero({setIsOpen}) {
            initial="hidden"
            whileInView="show"
            className="text-3xl sm:text-5xl md:text-6xl leading-tight">
-              {splitWords("I'm Dr.")} <span className="text-[rgb(var(--brand-teal))]">{splitWords("Olga Vasylenko")} </span>
+              {splitWords("I'm")} <span className="text-[rgb(var(--brand-teal))]">{splitWords("Marwa Al Mansoori")} </span>
               <br />
-              {splitWords("Microscopic Dentist")}
+              {splitWords("Strategic Consultant")}
          </motion.h1>
        </div>
 
        <div className='relative custom-container flex flex-col lg:flex-row justify-center lg:justify-between items-center lg:items-start gap-8 sm:gap-16 lg:gap-4'>
          <div className='w-full sm:max-w-4/5 lg:w-[30%] text-center lg:text-left'>
            <motion.h2 variants={heroItem} className="text-xl sm:text-2xl font-semibold leading-tight mb-3 lg:mb-4">
-             Specialist Endodontist & Microscopic Dentist
+             Board Leader & Economic Strategist
            </motion.h2>
 
            <motion.p variants={heroItem} className="text-[rgb(var(--brand-black))] text-base sm:text-lg">
-           I believe your natural tooth is priceless. I specialize in Microscopic Endodontics, using 25x magnification and French Aesthetic techniques to treat complex cases with zero pain and precise results. With over 15 years of experience, I restore not just the root, but the beauty of your smile.
+           I believe sustainable prosperity is built through vision and collaboration. I specialize in strategic consultancy and public-private partnerships, bridging government vision with private sector innovation. Through national leadership, I empower businesses and future-ready economies.
            </motion.p>
          </div>
 
@@ -123,14 +123,14 @@ export default function Hero({setIsOpen}) {
            <div className="relative flex items-center justify-center mb-6 gap-4 flex-wrap">
             <button onClick={() => setIsOpen(true)}
              className="group relative flex items-center border-2 border-white px-4 pr-14 py-2.5 bg-[rgb(var(--brand-white))] text-[rgb(var(--brand-black))] font-semibold rounded-full shadow-inner shadow-[rgb(var(--brand-white))/50] overflow-hidden transition-all duration-300 ease-in-out active:scale-95">
-             Let’s Collaborate
+               Request Consultation
               <div className="absolute right-1 top-1/2 transform -translate-y-1/2 flex items-center justify-center w-9 h-9 bg-[rgb(var(--brand-teal))] rounded-full shadow-md transition-all duration-300 ease-in-out group-hover:w-[calc(100%-0.5rem)]">
                 <HiArrowNarrowRight className="text-[rgb(var(--brand-white))] w-5 h-5 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
               </div>
             </button>
 
             <button className="text-center px-14 sm:px-10 py-2.5 border-2 border-[#1D796B] hover:bg-[#1D796B] hover:text-white bg-[rgb(var(--brand-white))] font-semibold rounded-full shadow-inner shadow-[rgb(var(--brand-white))/50] overflow-hidden transition-all duration-300 ease-in-out active:scale-95">
-            View Expertise
+              View Expertise
             </button>
            </div> 
          </motion.div>
@@ -147,9 +147,9 @@ export default function Hero({setIsOpen}) {
               <FaClock className="text-[rgb(var(--brand-teal))] w-7 h-7" />
             </motion.div>
             <div className='text-center lg:text-left'>
-              <h3 className="text-xl sm:text-2xl font-bold leading-tight"> <Counter to={15} duration={5} />+ Years</h3>
+              <h3 className="text-xl sm:text-2xl font-bold leading-tight"> <Counter to={10} duration={3} />+ Years</h3>
               <p className="text-[rgb(var(--brand-gray))] text-lg font-medium">
-                Experience in Microscopic Dentistry
+                Leadership & Strategic Experience
               </p>
             </div>
           </motion.div>
@@ -157,12 +157,12 @@ export default function Hero({setIsOpen}) {
           {/* Successful Treatments */}
           <motion.div variants={statsCard} className="flex flex-col lg:flex-row items-center gap-3">
             <motion.div variants={statsIcon}>
-              <FaTooth className="text-[rgb(var(--brand-teal))] w-7 h-7" />
+              <FaHandshake  className="text-[rgb(var(--brand-teal))] w-7 h-7" />
             </motion.div>
             <div className='text-center lg:text-left'>
-              <h3 className="text-xl sm:text-2xl font-bold leading-tight"><Counter to={60000} duration={4} />+</h3>
+              <h3 className="text-xl sm:text-2xl font-bold leading-tight"><Counter to={25} duration={4} />+ Partnerships</h3>
               <p className="text-[rgb(var(--brand-gray))] text-lg font-medium">
-                Successful Treatments
+                Regional & Global
               </p>
             </div>
           </motion.div>
@@ -170,12 +170,12 @@ export default function Hero({setIsOpen}) {
            {/* Award */}
            <motion.div variants={statsCard} className="flex flex-col lg:flex-row items-center gap-3">
             <motion.div variants={statsIcon}>
-             <FaTrophy className="text-[rgb(var(--brand-teal))] w-7 h-7" />
+             <FaAward  className="text-[rgb(var(--brand-teal))] w-7 h-7" />
             </motion.div>
             <div className='text-center lg:text-left'>
-              <h3 className="text-xl sm:text-2xl font-bold leading-tight">Mastermind Awardee</h3>
+              <h3 className="text-xl sm:text-2xl font-bold leading-tight">Forbes 30 Under 30</h3>
               <p className="text-[rgb(var(--brand-gray))] text-lg font-medium">
-                Recognized for Excellence in Dentistry
+                Recognized for Impact & Innovation
               </p>
             </div>
             </motion.div>
