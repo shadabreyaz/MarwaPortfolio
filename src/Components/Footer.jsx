@@ -25,7 +25,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-[#1D796B] pt-12 sm:pt-18">
+    <footer className="bg-[#2F6E5E] pt-12 sm:pt-18">
         <motion.h2
             className="text-3xl sm:text-4xl md:text-5xl leading-tight font-semibold
             text-[rgb(var(--brand-white))] text-center mb-12"
