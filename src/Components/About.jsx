@@ -38,8 +38,9 @@ export default function About() {
 
   const scrollDir = useScrollDirection(); // 'up' or 'down'
   return (
-    <section id='about' className="custom-container py-12 sm:py-20 flex flex-col lg:flex-row items-center gap-12">
-        <motion.div className='w-full'
+    <section id='about' className="bg-[#F4FAFF]">
+      <div className="custom-container py-12 sm:py-20 flex flex-col lg:flex-row items-center gap-12">
+       <motion.div className='w-full'
           variants={container(scrollDir)}
           initial="hidden"
           whileInView="show"
@@ -103,7 +104,7 @@ export default function About() {
                 className="w-full h-75 sm:h-87 md:h-120 lg:h-160 rounded-4xl object-cover"
             />
         </motion.div>
-
+      </div>
     </section>
   )
 }
