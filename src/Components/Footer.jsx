@@ -48,7 +48,7 @@ export default function Footer() {
                 viewport={{ once: false, amount: 0.3 }}
             >
               <motion.h3 className="text-xl sm:text-2xl font-semibold text-[rgb(var(--brand-white))]" variants={lineItem}>
-                Health Updates
+                Business Updates
               </motion.h3>  
               <div className="h-1 w-16 bg-white mb-4 bg-linear-to-r from-[rgb(var(--brand-teal))] to-white rounded-full"></div>
               <motion.p className="text-gray-100 mb-6 text-sm sm:text-base" variants={lineItem}>
@@ -139,6 +139,7 @@ export default function Footer() {
                         href={Icon.href}
                         className="text-white hover:scale-125 transition-all duration-300"
                         variants={lineItem}
+                        target="_blank"
                     >
                        {React.cloneElement(Icon.icon, { className: "h-6 w-6" })}
                     </motion.a>
