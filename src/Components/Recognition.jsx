@@ -38,7 +38,7 @@ const items = [
 ];
 
   return (
-    <section className="py-12 sm:py-20 bg-gray-300">
+    <section className="py-12 sm:py-20 bg-[#f4faff]">
       <div className="relative custom-container">
 
          {/* Section Heading */}

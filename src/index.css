@@ -2,11 +2,11 @@
 
 @layer base {
     :root {
-      --brand-teal: 47 184 168;    /* #2FB8A8 */
+      --brand-teal: 56, 128, 108;   /*065F46*/
       --brand-black: 13 13 13;   /* #0D0D0D */
       --brand-white: 255 255 255; /* #FFFFFF */
       --brand-gray: 117, 117, 117; /* #757575 */
-      --brand-bg-blue: 244, 250, 255; /* #F4FAFF */
+      --brand-bg-blue: bg-white;
       --font-family: 'Raleway', sans-serif;
     }
   

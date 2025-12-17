@@ -118,7 +118,7 @@ export default function Hero({setIsOpen}) {
            transition={{ duration: 0.3, ease: "easeOut" }} className='bg-[rgb(var(--brand-teal))] rounded-ss-full rounded-se-full h-68 w-full sm:w-2/3 lg:w-[36%] relative 
            flex items-end justify-center self-center lg:self-end-safe order-1 lg:order-[unset] mt-22 lg:mt-0'>
 
-           <img src="/her5.webp" alt="Hero-img" className='absolute bottom-0 inset-x-0 h-[20rem] sm:h-[24rem] w-auto object-contain'/>
+           <img src="/her5.png" alt="Hero-img" className='absolute bottom-0 inset-x-0 h-[20rem] sm:h-[24rem] w-auto object-contain'/>
 
            <div className="relative flex items-center justify-center mb-6 gap-4 flex-wrap">
             <button onClick={() => setIsOpen(true)}
